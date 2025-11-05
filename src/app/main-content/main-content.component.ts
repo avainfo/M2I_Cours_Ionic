@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {IonCol} from "@ionic/angular/standalone";
+import {IonCol, IonText} from "@ionic/angular/standalone";
 import {logoIonic} from "ionicons/icons";
 import {addIcons} from "ionicons";
 import {HeaderComponent} from "../components/header/header.component";
@@ -11,7 +11,8 @@ import {HeaderComponent} from "../components/header/header.component";
   imports: [
     IonCol,
     HeaderComponent,
-    HeaderComponent
+    HeaderComponent,
+    IonText
   ]
 })
 export class MainContentComponent {
