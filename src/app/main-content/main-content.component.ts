@@ -1,10 +1,9 @@
 import {Component} from '@angular/core';
-import {IonButton, IonCol, IonIcon, IonInput, IonRow} from "@ionic/angular/standalone";
-import {ProfileHeaderComponent} from "../components/profile-header/profile-header.component";
-import {ProfilePictureComponent} from "../components/profile-picture/profile-picture.component";
-import {CardComponent} from "../components/card/card.component";
+import {IonCol, IonIcon, IonRow} from "@ionic/angular/standalone";
 import {logoIonic} from "ionicons/icons";
 import {addIcons} from "ionicons";
+import {IconComponent} from "../components/icon/icon.component";
+import {SpacerComponent} from "../components/spacer/spacer.component";
 
 @Component({
   selector: 'app-main-content',
@@ -12,13 +11,10 @@ import {addIcons} from "ionicons";
   styleUrls: ['./main-content.component.scss'],
   imports: [
     IonCol,
-    ProfileHeaderComponent,
-    ProfilePictureComponent,
-    CardComponent,
     IonRow,
     IonIcon,
-    IonInput,
-    IonButton
+    IconComponent,
+    SpacerComponent
   ]
 })
 export class MainContentComponent {
@@ -26,6 +22,4 @@ export class MainContentComponent {
   constructor() {
     addIcons({logoIonic});
   }
-
-
 }
