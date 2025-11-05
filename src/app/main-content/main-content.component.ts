@@ -1,9 +1,8 @@
 import {Component} from '@angular/core';
-import {IonCol, IonIcon, IonRow} from "@ionic/angular/standalone";
+import {IonCol} from "@ionic/angular/standalone";
 import {logoIonic} from "ionicons/icons";
 import {addIcons} from "ionicons";
-import {IconComponent} from "../components/icon/icon.component";
-import {SpacerComponent} from "../components/spacer/spacer.component";
+import {HeaderComponent} from "../components/header/header.component";
 
 @Component({
   selector: 'app-main-content',
@@ -11,10 +10,8 @@ import {SpacerComponent} from "../components/spacer/spacer.component";
   styleUrls: ['./main-content.component.scss'],
   imports: [
     IonCol,
-    IonRow,
-    IonIcon,
-    IconComponent,
-    SpacerComponent
+    HeaderComponent,
+    HeaderComponent
   ]
 })
 export class MainContentComponent {
