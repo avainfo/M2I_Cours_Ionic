@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import {IonContent,} from '@ionic/angular/standalone';
-import {MainContentComponent} from "../main-content/main-content.component";
+import {MainContentComponent} from "../components/main-content/main-content.component";
 
 @Component({
   selector: 'app-home',
